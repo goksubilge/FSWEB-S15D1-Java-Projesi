@@ -1,12 +1,18 @@
 package com.wit.market.main;
 
+import com.wit.market.models.Market;
+
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        List<String> markett = new LinkedList<>();
+        enterMarket(markett);
     }
 
-    public static void enterMarket(String[] args) {
+    public static void enterMarket(List<String> shoppingList) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             try {
@@ -16,13 +22,13 @@ public class Main {
                     System.out.println("process must be between 0-2");
                 }
                 if (process == 0  ) {
-                    System.out.println(0);
+                    System.exit(0);
                 }
                 if (process == 1 ) {
-                    // addItems();
+                    Market.addItems(shoppingList);
                 }
-                if (process < 2 ) {
-                    //removeItems();
+                if (process == 2 ) {
+                    Market.removeItems(shoppingList);
                 }
                 } catch (Exception ex) {
                     System.out.println("Invalid process: " + ex.getMessage());
