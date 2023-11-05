@@ -13,10 +13,12 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
  * Amacımız bir pazar arabası listesi oluşturmak
  * Bir konsol uygulaması oluşturacağız. Kullanıcı 0, 1 veya 2 değerlerini girebilir.(Scanner sınıfını kullanarak yapabilirsiniz.)
- * 0 uygulamayı durduracak.
+ * 0 uygulamayı durduracak. 
+  (Main => enterMarket)
  * 1 e tıklandığında ekrana bir prompt bastırın. ```Eklenmesini istediğiniz elemanları giriniz.``` Kullanıcı bu opsiyonu 2 farklı biçimde kullanabilir. Tek bir eleman ekleyebilir. Ya da virgüllerle ayırarak birden çok eleman ekleyebilir(tomato, orange, peach)
  * 2 e tıklandığında ekrana bir prompt bastırın. ```Cıkarılmasını istediğiniz elemanları giriniz.``` Kullanıcı bu opsiyonu 2 farklı biçimde kullanabilir. Tek bir eleman çıkarabilir. Ya da virgüllerle ayırarak birden çok eleman çıkarabilir(tomato, orange, peach)
  * Bir tane  ```groceryList``` adında ArrayList tipinde bir objeye ihtiyacımız var.
+  (marketList)
  * 4 tane metod yazmalıyız. ```addItems``` => listeye eleman eklemeli., ```removeItems``` => listeden eleman silmeli, ```checkItemIsInList``` => eklenmeye ya da silinmeye çalışılan elaman listede varmı kontrolü yapmalı, ```printSorted``` => tüm listeyi sıralayarak ekrana basmalı.
  * Her operasyon sonrasında liste sort edilmeli
  * Listede hiçbir şekilde tekrar eden veri bulunmamalı.
